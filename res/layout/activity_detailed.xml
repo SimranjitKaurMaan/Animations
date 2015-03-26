@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topLevelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        tools:context="com.purpleberry.dineranimation.DetailedActivity" >
+
+        <GridView
+            android:id="@+id/vertical_grid_view"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:columnCount="2"
+            android:overScrollMode="ifContentScrolls" >
+        </GridView>
+
+        <ImageView
+            android:id="@+id/fullImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="89dp"
+            android:layout_toRightOf="@+id/vertical_grid_view"
+            android:src="@drawable/dish1" />
+    </RelativeLayout>
+
+</ScrollView>
